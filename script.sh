@@ -22,7 +22,7 @@ printError(){
 
 read(){
 	# Нужно из-за проблемы с read, при перенаправлении ошибок пропадает промпт.
-	printf "$1"
+	printf "$1\n"
 	command read $2
 }
 
