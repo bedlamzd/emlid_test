@@ -1,4 +1,5 @@
 #!/bin/bash
+# shellcheck disable=SC2162
 #
 # Тестовое задание в Emlid
 
@@ -29,7 +30,7 @@ read() {
 while true; do
   print_menu
   read "Введите номер пункта из меню: " opt
-  case $opt in
+  case ${opt} in
     1)
       printf "Текущий каталог: %s\n\n" "$(pwd)"
       ;;
