@@ -18,7 +18,7 @@ END
 }
 
 err() {
-  printf "Ошибка! %s\n\n" "$(tail -n 1 ${ERROR_LOG})" >&1
+  printf "Ошибка! %s\n\n" "$(tail -n 1 ${ERROR_LOG})" >&2
 }
 
 read() {
